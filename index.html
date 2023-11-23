@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">COFFEE SHOP</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#anj">Product</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+           
+        </ul>
+        <img class="menu-btn" src="./images/menubtn.png" alt="">
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h2>Start Your Day With a Fresh Coffee</h2>
+          <a href="#" class="ctn">Shop Now</a>
+               </div>
+    </header>
+    <section class="products" >
+        <div id="anj" class="title">
+            <h1>Products</h1>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="./images/cold1.jpg" alt="cold">
+                <h4>Cold Coffee</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus sint? Quam, dolores? Nesciunt temporibus expedita a?</p>
+                 <!-- <a href="#" class="ctn">Learn More</a>  -->
+            </div>
+
+            <div class="col">
+                <img src="./images/cold2.jpg" alt="cold">
+                <h4>Capichino</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus sint? Quam, dolores? Nesciunt temporibus expedita a? </p>
+                <!-- <a href="#" class="ctn">Learn More</a> -->
+            </div>
+            <div class="col">
+                <img src="./images/cold3.jpg" alt="cold">
+                <h4>Capichino</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus sint? Quam, dolores? Nesciunt temporibus expedita a? </p>
+                <!-- <a href="#" class="ctn">Learn More</a> -->
+            </div>
+        </div>
+    </section>
+     <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script> 
+    
+</body>
+</html>
